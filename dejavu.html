@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deja vu</title>
+</head>
+<body background="https://i.ytimg.com/vi/cii6ruuycQA/maxresdefault.jpg"
+style="background-size: 100%;">
+    <center> <button onclick="calcAn()">do you get deja vu?</button><br><br>
+    <button onclick="calcA1()">A1</button>
+    <button onclick="calcN()">N</button>
+    <button onclick="calcR()">R</button><br><br>
+    <input type="date">
+    <input type="color"><br><br>
+    <input type="email" placeholder="Digite seu e-mail"><br><br>
+    <input type="text"  placeholder="Digite seu nome de usuário"><br><br>
+    <input type="password" placeholder="Digite seu senha"><br><br>
+    <input type="range"><br><br>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0vnKE8ukNmF641XhnEyZJD?utm_source=generator" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>    </center>
+</body>
+</html>
+<script>
+    function calcAn(){
+        var a1 = Number(prompt("Digite o valor de a1"));
+        var n = Number(prompt("Digite o valor de n")); 
+        var r = Number(prompt("Digite o valor de r"));
+        var An = a1 + (n-1) * r;
+        alert(An);
+    }
+    function calcA1(){
+        var an = Number(prompt("Digite o valor de an"));
+        var n = Number(prompt("Digite o valor de n")); 
+        var r = Number(prompt("Digite o valor de r"));
+        var A1 = an + (n-1) * r;
+        alert(A1)
+    }
+    function calcN(){
+        var an = Number(prompt("Digite o valor de an"));
+        var A1 = Number(prompt("Digite o valor de A1")); 
+        var r = Number(prompt("Digite o valor de r"));
+        var n = 1+ ((an-a1) / r);
+        alert(n)
+    }
+    function calcR(){
+        var a1 = Number(prompt("Digite o valor de a1"));
+        var n = Number(prompt("Digite o valor de n")); 
+        var an = Number(prompt("Digite o valor de an"));
+        var r = (an-a1)/(n-1);
+        alert(r)
+    }
+</script>
